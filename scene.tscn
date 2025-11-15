@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://bw6wgmfcsp2io" path="res://label.gd" id="5_m7jmp"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_nxogm"]
+friction = 0.25
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nxogm"]
 size = Vector2(3024, 84)
@@ -34,7 +35,7 @@ size = Vector2(1320.5, 168)
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_3253y"]
 friction = 0.0
-bounce = 0.25
+bounce = 0.5
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_3253y"]
 a = Vector2(3024, 0)
@@ -79,6 +80,7 @@ physics_material_override = SubResource("PhysicsMaterial_nxogm")
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
 position = Vector2(1512, 945)
+scale = Vector2(1.17987, 1.17978)
 texture = ExtResource("2_nxogm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
@@ -192,7 +194,8 @@ position = Vector2(2363.75, 8.5)
 shape = SubResource("RectangleShape2D_223my")
 
 [node name="Sprite2D2" type="Sprite2D" parent="StaticBody2D"]
-position = Vector2(1512, -945)
+position = Vector2(1511.5, -945)
+scale = Vector2(1.18026, 1.17978)
 texture = ExtResource("2_3253y")
 
 [node name="CollisionShape2D14" type="CollisionShape2D" parent="StaticBody2D"]
